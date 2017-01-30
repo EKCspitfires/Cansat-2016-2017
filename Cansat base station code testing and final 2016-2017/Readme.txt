@@ -1,0 +1,1 @@
+this is were all files for the base station will be put.
