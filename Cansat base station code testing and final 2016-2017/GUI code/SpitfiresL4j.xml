@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Kieran\Documents\GitHub\Cansat-2016-2017\Cansat base station code testing and final 2016-2017\GUI code\Spitfires.jar</jar>
+  <outfile>C:\Users\Kieran\Documents\GitHub\Cansat-2016-2017\Cansat base station code testing and final 2016-2017\GUI code\Spitfires.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Kieran\Documents\GitHub\Cansat-2016-2017\Cansat base station code testing and final 2016-2017\GUI code\Images\EKC.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <splash>
+    <file>C:\Users\Kieran\Documents\GitHub\Cansat-2016-2017\Cansat base station code testing and final 2016-2017\GUI code\Images\EKC-Full.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>60</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+  <versionInfo>
+    <fileVersion>0.0.0.1</fileVersion>
+    <txtFileVersion>0.1</txtFileVersion>
+    <fileDescription>CanSat Ground Station for EKC Spitfires 2016-2017</fileDescription>
+    <copyright>Kieran Ballard - EKC Spitfires</copyright>
+    <productVersion>0.0.0.1</productVersion>
+    <txtProductVersion>0.1</txtProductVersion>
+    <productName>CanSat Ground Station - EKC Spitfires</productName>
+    <companyName></companyName>
+    <internalName>CanSatGroundStationEKCSpitfires</internalName>
+    <originalFilename>Spitfires.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_UK</language>
+  </versionInfo>
+</launch4jConfig>
