@@ -7,12 +7,12 @@ int LastValue;
 
 void setup() { 
 LastValue = 1; 
-Serial.begin(9600); 
+Serial.begin(115200); 
 Serial.println("Vane Value\tDirection\tHeading"); 
 } 
 
-voidloop() { 
-VaneValue = analogRead(A4); 
+void loop() { 
+VaneValue = analogRead(A0); 
 Direction = map(VaneValue, 0, 1023, 0, 360); 
 CalDirection = Direction + Offset; 
 
@@ -51,5 +51,7 @@ Serial.println("W");
 else if (direction < 337) 
 Serial.println("NW"); 
 else 
-Serial.println("N"); 
+Serial.println("N");
+
+
 }

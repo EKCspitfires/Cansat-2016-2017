@@ -1,6 +1,6 @@
 #include <math.h> 
 
-#define WindSensorPin (2) // The pin location of the anemometer sensor 
+#define WindSensorPin (3) // The pin location of the anemometer sensor 
 
 volatile unsigned long Rotations; // cup rotation counter used in interrupt routine 
 volatile unsigned long ContactBounceTime; // Timer to avoid contact bounce in interrupt routine 
