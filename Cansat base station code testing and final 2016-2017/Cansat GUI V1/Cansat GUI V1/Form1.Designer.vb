@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.cmbPort = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -33,6 +34,20 @@ Partial Class Form1
         Me.txtMessage = New System.Windows.Forms.TextBox()
         Me.btnSend = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.aXTxt = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.LOTxt = New System.Windows.Forms.TextBox()
+        Me.gZTxt = New System.Windows.Forms.TextBox()
+        Me.gYTxt = New System.Windows.Forms.TextBox()
+        Me.gXTxt = New System.Windows.Forms.TextBox()
+        Me.aYTxt = New System.Windows.Forms.TextBox()
+        Me.aZTxt = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,10 +56,10 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -117,23 +132,23 @@ Partial Class Form1
         '
         'txtIn
         '
-        Me.txtIn.Location = New System.Drawing.Point(465, 35)
+        Me.txtIn.Location = New System.Drawing.Point(12, 166)
         Me.txtIn.Multiline = True
         Me.txtIn.Name = "txtIn"
         Me.txtIn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtIn.Size = New System.Drawing.Size(859, 100)
+        Me.txtIn.Size = New System.Drawing.Size(447, 100)
         Me.txtIn.TabIndex = 2
         '
         'txtMessage
         '
-        Me.txtMessage.Location = New System.Drawing.Point(465, 141)
+        Me.txtMessage.Location = New System.Drawing.Point(93, 273)
         Me.txtMessage.Name = "txtMessage"
-        Me.txtMessage.Size = New System.Drawing.Size(859, 22)
+        Me.txtMessage.Size = New System.Drawing.Size(366, 22)
         Me.txtMessage.TabIndex = 3
         '
         'btnSend
         '
-        Me.btnSend.Location = New System.Drawing.Point(384, 141)
+        Me.btnSend.Location = New System.Drawing.Point(12, 272)
         Me.btnSend.Name = "btnSend"
         Me.btnSend.Size = New System.Drawing.Size(75, 23)
         Me.btnSend.TabIndex = 4
@@ -143,129 +158,229 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(467, 15)
+        Me.Label3.Location = New System.Drawing.Point(12, 146)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(34, 17)
+        Me.Label3.Size = New System.Drawing.Size(240, 17)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "com"
+        Me.Label3.Text = "aX,aY,aZ,gX,gY,gZ,LO,LA,N,T,P,V,A"
         '
-        'Label5
+        'aXTxt
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(529, 15)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 17)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "com"
+        Me.aXTxt.Location = New System.Drawing.Point(49, 312)
+        Me.aXTxt.Name = "aXTxt"
+        Me.aXTxt.Size = New System.Drawing.Size(99, 22)
+        Me.aXTxt.TabIndex = 7
         '
-        'Label6
+        'TextBox2
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(1105, 15)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(34, 17)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "com"
+        Me.TextBox2.Location = New System.Drawing.Point(178, 469)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox2.TabIndex = 8
         '
-        'Label7
+        'TextBox3
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(660, 15)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(34, 17)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "com"
+        Me.TextBox3.Location = New System.Drawing.Point(329, 452)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox3.TabIndex = 9
         '
-        'Label8
+        'TextBox4
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(724, 15)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(34, 17)
-        Me.Label8.TabIndex = 11
-        Me.Label8.Text = "com"
+        Me.TextBox4.Location = New System.Drawing.Point(329, 424)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox4.TabIndex = 10
         '
-        'Label9
+        'TextBox5
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(784, 15)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(34, 17)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "com"
+        Me.TextBox5.Location = New System.Drawing.Point(329, 396)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox5.TabIndex = 11
         '
-        'Label10
+        'TextBox6
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(856, 15)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(34, 17)
-        Me.Label10.TabIndex = 13
-        Me.Label10.Text = "com"
+        Me.TextBox6.Location = New System.Drawing.Point(329, 368)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox6.TabIndex = 12
         '
-        'Label11
+        'TextBox7
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(929, 15)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(34, 17)
-        Me.Label11.TabIndex = 14
-        Me.Label11.Text = "com"
+        Me.TextBox7.Location = New System.Drawing.Point(329, 340)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(99, 22)
+        Me.TextBox7.TabIndex = 13
         '
-        'Label12
+        'LOTxt
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(982, 15)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(34, 17)
-        Me.Label12.TabIndex = 15
-        Me.Label12.Text = "com"
+        Me.LOTxt.Location = New System.Drawing.Point(329, 312)
+        Me.LOTxt.Name = "LOTxt"
+        Me.LOTxt.Size = New System.Drawing.Size(99, 22)
+        Me.LOTxt.TabIndex = 14
         '
-        'Label13
+        'gZTxt
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(1045, 15)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(34, 17)
-        Me.Label13.TabIndex = 16
-        Me.Label13.Text = "com"
+        Me.gZTxt.Location = New System.Drawing.Point(49, 452)
+        Me.gZTxt.Name = "gZTxt"
+        Me.gZTxt.Size = New System.Drawing.Size(99, 22)
+        Me.gZTxt.TabIndex = 15
         '
-        'Label14
+        'gYTxt
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(594, 15)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(34, 17)
-        Me.Label14.TabIndex = 17
-        Me.Label14.Text = "com"
+        Me.gYTxt.Location = New System.Drawing.Point(49, 424)
+        Me.gYTxt.Name = "gYTxt"
+        Me.gYTxt.Size = New System.Drawing.Size(99, 22)
+        Me.gYTxt.TabIndex = 16
+        '
+        'gXTxt
+        '
+        Me.gXTxt.Location = New System.Drawing.Point(49, 396)
+        Me.gXTxt.Name = "gXTxt"
+        Me.gXTxt.Size = New System.Drawing.Size(99, 22)
+        Me.gXTxt.TabIndex = 17
+        '
+        'aYTxt
+        '
+        Me.aYTxt.Location = New System.Drawing.Point(49, 340)
+        Me.aYTxt.Name = "aYTxt"
+        Me.aYTxt.Size = New System.Drawing.Size(99, 22)
+        Me.aYTxt.TabIndex = 18
+        '
+        'aZTxt
+        '
+        Me.aZTxt.Location = New System.Drawing.Point(49, 368)
+        Me.aZTxt.Name = "aZTxt"
+        Me.aZTxt.Size = New System.Drawing.Size(99, 22)
+        Me.aZTxt.TabIndex = 19
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(1162, 15)
+        Me.Label4.Location = New System.Drawing.Point(303, 399)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(34, 17)
-        Me.Label4.TabIndex = 18
-        Me.Label4.Text = "com"
+        Me.Label4.Size = New System.Drawing.Size(17, 34)
+        Me.Label4.TabIndex = 20
+        Me.Label4.Text = "T" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(303, 368)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(18, 17)
+        Me.Label5.TabIndex = 21
+        Me.Label5.Text = "N"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(296, 312)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(27, 17)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "LO"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(18, 452)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(25, 17)
+        Me.Label7.TabIndex = 23
+        Me.Label7.Text = "gZ"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(15, 424)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(25, 17)
+        Me.Label8.TabIndex = 24
+        Me.Label8.Text = "gY"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(15, 396)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(25, 17)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "gX"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(18, 368)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(25, 17)
+        Me.Label10.TabIndex = 26
+        Me.Label10.Text = "aZ"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(18, 340)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(25, 17)
+        Me.Label11.TabIndex = 27
+        Me.Label11.Text = "aY"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(18, 312)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(25, 17)
+        Me.Label12.TabIndex = 28
+        Me.Label12.Text = "aX"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(258, 424)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(65, 17)
+        Me.Label14.TabIndex = 30
+        Me.Label14.Text = "Pressure"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(1224, 15)
+        Me.Label15.Location = New System.Drawing.Point(284, 455)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(14, 17)
-        Me.Label15.TabIndex = 19
-        Me.Label15.Text = "x"
+        Me.Label15.Size = New System.Drawing.Size(39, 17)
+        Me.Label15.TabIndex = 31
+        Me.Label15.Text = "Volts"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(223, 449)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(17, 17)
+        Me.Label16.TabIndex = 32
+        Me.Label16.Text = "A"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(296, 340)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(25, 17)
+        Me.Label13.TabIndex = 33
+        Me.Label13.Text = "LA"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1343, 599)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -274,11 +389,26 @@ Partial Class Form1
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.aZTxt)
+        Me.Controls.Add(Me.aYTxt)
+        Me.Controls.Add(Me.gXTxt)
+        Me.Controls.Add(Me.gYTxt)
+        Me.Controls.Add(Me.gZTxt)
+        Me.Controls.Add(Me.LOTxt)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.aXTxt)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnSend)
         Me.Controls.Add(Me.txtMessage)
         Me.Controls.Add(Me.txtIn)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "low risk GUI v1"
         Me.GroupBox1.ResumeLayout(False)
@@ -299,6 +429,20 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents aXTxt As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents LOTxt As TextBox
+    Friend WithEvents gZTxt As TextBox
+    Friend WithEvents gYTxt As TextBox
+    Friend WithEvents gXTxt As TextBox
+    Friend WithEvents aYTxt As TextBox
+    Friend WithEvents aZTxt As TextBox
+    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -307,8 +451,8 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label13 As Label
 End Class

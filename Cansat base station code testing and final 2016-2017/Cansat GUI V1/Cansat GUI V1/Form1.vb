@@ -1,4 +1,6 @@
 ﻿Imports System.IO.Ports
+
+
 Public Class Form1
     Dim WithEvents sp As New SerialPort
 
@@ -25,6 +27,8 @@ Public Class Form1
         Catch
             MsgBox("No ports connected.")
         End Try
+
+
     End Sub
 
     Private Function BaudRates() As Object
@@ -78,4 +82,12 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles aXTxt.TextChanged
+
+
+
+
+
+
+    End Sub
 End Class
