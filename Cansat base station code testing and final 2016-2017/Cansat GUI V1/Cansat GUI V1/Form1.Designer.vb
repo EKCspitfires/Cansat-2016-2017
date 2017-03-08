@@ -35,12 +35,12 @@ Partial Class Form1
         Me.btnSend = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.aXTxt = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.ATxt = New System.Windows.Forms.TextBox()
+        Me.VTxt = New System.Windows.Forms.TextBox()
+        Me.PTxt = New System.Windows.Forms.TextBox()
+        Me.TTxt = New System.Windows.Forms.TextBox()
+        Me.NTxt = New System.Windows.Forms.TextBox()
+        Me.LATxt = New System.Windows.Forms.TextBox()
         Me.LOTxt = New System.Windows.Forms.TextBox()
         Me.gZTxt = New System.Windows.Forms.TextBox()
         Me.gYTxt = New System.Windows.Forms.TextBox()
@@ -171,47 +171,47 @@ Partial Class Form1
         Me.aXTxt.Size = New System.Drawing.Size(99, 22)
         Me.aXTxt.TabIndex = 7
         '
-        'TextBox2
+        'ATxt
         '
-        Me.TextBox2.Location = New System.Drawing.Point(178, 469)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox2.TabIndex = 8
+        Me.ATxt.Location = New System.Drawing.Point(178, 469)
+        Me.ATxt.Name = "ATxt"
+        Me.ATxt.Size = New System.Drawing.Size(99, 22)
+        Me.ATxt.TabIndex = 8
         '
-        'TextBox3
+        'VTxt
         '
-        Me.TextBox3.Location = New System.Drawing.Point(329, 452)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox3.TabIndex = 9
+        Me.VTxt.Location = New System.Drawing.Point(329, 452)
+        Me.VTxt.Name = "VTxt"
+        Me.VTxt.Size = New System.Drawing.Size(99, 22)
+        Me.VTxt.TabIndex = 9
         '
-        'TextBox4
+        'PTxt
         '
-        Me.TextBox4.Location = New System.Drawing.Point(329, 424)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox4.TabIndex = 10
+        Me.PTxt.Location = New System.Drawing.Point(329, 424)
+        Me.PTxt.Name = "PTxt"
+        Me.PTxt.Size = New System.Drawing.Size(99, 22)
+        Me.PTxt.TabIndex = 10
         '
-        'TextBox5
+        'TTxt
         '
-        Me.TextBox5.Location = New System.Drawing.Point(329, 396)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox5.TabIndex = 11
+        Me.TTxt.Location = New System.Drawing.Point(329, 396)
+        Me.TTxt.Name = "TTxt"
+        Me.TTxt.Size = New System.Drawing.Size(99, 22)
+        Me.TTxt.TabIndex = 11
         '
-        'TextBox6
+        'NTxt
         '
-        Me.TextBox6.Location = New System.Drawing.Point(329, 368)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox6.TabIndex = 12
+        Me.NTxt.Location = New System.Drawing.Point(329, 368)
+        Me.NTxt.Name = "NTxt"
+        Me.NTxt.Size = New System.Drawing.Size(99, 22)
+        Me.NTxt.TabIndex = 12
         '
-        'TextBox7
+        'LATxt
         '
-        Me.TextBox7.Location = New System.Drawing.Point(329, 340)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox7.TabIndex = 13
+        Me.LATxt.Location = New System.Drawing.Point(329, 340)
+        Me.LATxt.Name = "LATxt"
+        Me.LATxt.Size = New System.Drawing.Size(99, 22)
+        Me.LATxt.TabIndex = 13
         '
         'LOTxt
         '
@@ -396,12 +396,12 @@ Partial Class Form1
         Me.Controls.Add(Me.gYTxt)
         Me.Controls.Add(Me.gZTxt)
         Me.Controls.Add(Me.LOTxt)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.LATxt)
+        Me.Controls.Add(Me.NTxt)
+        Me.Controls.Add(Me.TTxt)
+        Me.Controls.Add(Me.PTxt)
+        Me.Controls.Add(Me.VTxt)
+        Me.Controls.Add(Me.ATxt)
         Me.Controls.Add(Me.aXTxt)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnSend)
@@ -430,12 +430,12 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents aXTxt As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents ATxt As TextBox
+    Friend WithEvents VTxt As TextBox
+    Friend WithEvents PTxt As TextBox
+    Friend WithEvents TTxt As TextBox
+    Friend WithEvents NTxt As TextBox
+    Friend WithEvents LATxt As TextBox
     Friend WithEvents LOTxt As TextBox
     Friend WithEvents gZTxt As TextBox
     Friend WithEvents gYTxt As TextBox

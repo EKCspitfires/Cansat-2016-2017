@@ -11,7 +11,24 @@ Public Class Form1
     End Sub
 
     Sub ShowString(ByVal myString As String)
+        Dim splittingText() As String
         txtIn.AppendText(myString)
+        splittingText = txtIn.Text.Split(",")
+        aXTxt.AppendText(splittingText(0).ToString())
+        aYTxt.AppendText(splittingText(1).ToString())
+        aZTxt.AppendText(splittingText(2).ToString())
+        gXTxt.AppendText(splittingText(3).ToString())
+        gYTxt.AppendText(splittingText(4).ToString())
+        gZTxt.AppendText(splittingText(5).ToString())
+        LOTxt.AppendText(splittingText(6).ToString())
+        LATxt.AppendText(splittingText(7).ToString())
+        NTxt.AppendText(splittingText(8).ToString())
+        TTxt.AppendText(splittingText(9).ToString())
+        PTxt.AppendText(splittingText(10).ToString())
+        VTxt.AppendText(splittingText(11).ToString())
+        ATxt.AppendText(splittingText(12).ToString())
+
+
     End Sub
 
     Delegate Sub myMethodDelegate(ByVal [text] As String)
@@ -88,6 +105,10 @@ Public Class Form1
 
 
 
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class
