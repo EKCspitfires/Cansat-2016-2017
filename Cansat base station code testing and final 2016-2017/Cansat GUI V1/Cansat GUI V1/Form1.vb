@@ -1,5 +1,5 @@
 ﻿Imports System.IO.Ports
-
+Imports Cansat_GUI_V1
 
 Public Class Form1
     Dim WithEvents sp As New SerialPort
@@ -10,8 +10,8 @@ Public Class Form1
         Next
     End Sub
 
-    Sub ShowString(ByVal myString As String)
-        Dim splittingText() As String
+    Sub ShowString(ByVal myString As String, ByVal splittingText() As String)
+
         txtIn.AppendText(myString)
         splittingText = txtIn.Text.Split(",")
         aXTxt.AppendText(splittingText(0).ToString())
@@ -26,13 +26,49 @@ Public Class Form1
         TTxt.AppendText(splittingText(9).ToString())
         PTxt.AppendText(splittingText(10).ToString())
         VTxt.AppendText(splittingText(11).ToString())
-        ATxt.AppendText(splittingText(12).ToString())
 
 
     End Sub
 
-    Delegate Sub myMethodDelegate(ByVal [text] As String)
+    Delegate Sub myMethodDelegate(ByVal [text] As String, ByVal [text] As String)
     Dim myDelegate As New myMethodDelegate(AddressOf ShowString)
+
+
+    Public Property MyDelegate1 As myMethodDelegate
+        Get
+            Return MyDelegate3
+        End Get
+        Set(value As myMethodDelegate)
+            MyDelegate3 = value
+        End Set
+    End Property
+
+    Public Property MyDelegate2 As myMethodDelegate
+        Get
+            Return MyDelegate3
+        End Get
+        Set(value As myMethodDelegate)
+            MyDelegate3 = value
+        End Set
+    End Property
+
+    Public Property MyDelegate3 As myMethodDelegate
+        Get
+            Return MyDelegate4
+        End Get
+        Set(value As myMethodDelegate)
+            MyDelegate4 = value
+        End Set
+    End Property
+
+    Public Property MyDelegate4 As myMethodDelegate
+        Get
+            Return myDelegate
+        End Get
+        Set(value As myMethodDelegate)
+            myDelegate = value
+        End Set
+    End Property
 
     Private Sub Form1_Load(sender As System.Object, e As EventArgs) Handles MyBase.Load
         Dim BaudRates() As String = {"300", "1200", "2400", "4800", "9600", "14400", "19200", "28800", "38400", "57600", "115200"}
@@ -89,7 +125,7 @@ Public Class Form1
     End Sub
     Private Sub SerialPort_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles sp.DataReceived
         Dim str As String = sp.ReadExisting()
-        Invoke(myDelegate, str)
+        Invoke(MyDelegate3, str)
     End Sub
 
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
@@ -105,10 +141,6 @@ Public Class Form1
 
 
 
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

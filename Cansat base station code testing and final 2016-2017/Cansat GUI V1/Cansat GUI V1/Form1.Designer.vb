@@ -35,7 +35,6 @@ Partial Class Form1
         Me.btnSend = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.aXTxt = New System.Windows.Forms.TextBox()
-        Me.ATxt = New System.Windows.Forms.TextBox()
         Me.VTxt = New System.Windows.Forms.TextBox()
         Me.PTxt = New System.Windows.Forms.TextBox()
         Me.TTxt = New System.Windows.Forms.TextBox()
@@ -58,7 +57,6 @@ Partial Class Form1
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -170,13 +168,6 @@ Partial Class Form1
         Me.aXTxt.Name = "aXTxt"
         Me.aXTxt.Size = New System.Drawing.Size(99, 22)
         Me.aXTxt.TabIndex = 7
-        '
-        'ATxt
-        '
-        Me.ATxt.Location = New System.Drawing.Point(178, 469)
-        Me.ATxt.Name = "ATxt"
-        Me.ATxt.Size = New System.Drawing.Size(99, 22)
-        Me.ATxt.TabIndex = 8
         '
         'VTxt
         '
@@ -354,15 +345,6 @@ Partial Class Form1
         Me.Label15.TabIndex = 31
         Me.Label15.Text = "Volts"
         '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(223, 449)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(17, 17)
-        Me.Label16.TabIndex = 32
-        Me.Label16.Text = "A"
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -378,7 +360,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1343, 599)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label12)
@@ -401,7 +382,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TTxt)
         Me.Controls.Add(Me.PTxt)
         Me.Controls.Add(Me.VTxt)
-        Me.Controls.Add(Me.ATxt)
         Me.Controls.Add(Me.aXTxt)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnSend)
@@ -430,7 +410,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents aXTxt As TextBox
-    Friend WithEvents ATxt As TextBox
     Friend WithEvents VTxt As TextBox
     Friend WithEvents PTxt As TextBox
     Friend WithEvents TTxt As TextBox
@@ -453,6 +432,5 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
     Friend WithEvents Label13 As Label
 End Class
